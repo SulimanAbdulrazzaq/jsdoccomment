@@ -234,6 +234,7 @@ const getReducedASTNode = function (nodeInput, sourceCode, settings) {
   case 'TSEnumDeclaration':
   case 'ClassDeclaration':
   case 'FunctionDeclaration':
+  case 'VariableDeclaration':
     // eslint-disable-next-line @stylistic/max-len -- Long
     /* v8 ignore next 3 -- Defensive: declarations are expected to have a parent */
     if (!parent) {
